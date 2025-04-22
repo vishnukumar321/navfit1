@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@500&display=swap');
+
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+
+body {
+    background-color: #464564;
+    
+}
+
+* {
+    font-family: Barlow;
+}
+
+.panel-body {
+    width: 950px;
+    height: 650px;
+    background-color: #2E2E46;
+    margin: 0 auto;
+    margin-top: 5% ;
+    border-radius: 50px;
+}
+
+.center-div {
+    float: left;
+    background-color: #393857;
+    height: 100%;
+    width: 680px;
+    border-radius: 45px;
+    margin-left: 5px;
+}
+
+.title {
+    float: left;
+    color: #9393B8;
+    margin-left: 50px ;
+    margin-top: 40px;
+}
+
+.sidebar-container {
+    display: block;
+    list-style-type: none;
+    margin-top: 120px;
+    margin-left: -128px;
+    float: left;
+}
+
+.icon {
+    width: 18px;
+}
+
+.sidebar-object {
+    padding-left: 13px;
+    margin-top: 0px;
+    font-size: 15px;
+    color: #656485;
+    cursor: pointer;
+}
+
+.active {
+    color: #E16292;
+    background-color: #393857;
+    border-radius: 17px;
+    padding-top: 7px;
+    padding-left: 15px;
+    width: 120px;
+    height: 29px;
+}
+
+.second {
+    margin-top: 65px;
+}
+
+.other {
+    margin-top: 30px;
+}
+
+.logout {
+    color: #656485;
+    float: left;
+    margin-left: -125px;
+    margin-top: 600px;
+    cursor: pointer;
+}
+
+.nav {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-weight: 400;
+}
+
+.welcome {
+    color: #656485;
+    float: left;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.welcome-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    float: left;
+}
+
+.search-box {
+    display: block;
+    font-family: Barlow ;
+    font-size: 16px ;
+    float: left;
+    color: white;
+    background-color: #2E2E46;
+    border-radius: 50px;
+    margin-left: 310px;
+    margin-top: -30px;
+    width: 280px;
+    height: 36px;
+    Outline:none;
+    border: 0;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.fa-search {
+    font-size: 16px;
+    display: block;
+    float: right;
+    position: absolute;
+    margin-right: 35px;
+    color: #656485;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.visa {
+    float: left;
+    background-color: hsla(207,100%,82.9%,1); background-image: radial-gradient(at 0% 45%, hsla(357, 81%, 60%, 1) 0, transparent 50%),radial-gradient(at 97% 6%, hsla(240,100%,67.1%,1) 0, transparent 50%),radial-gradient(at 52% 3%, hsla(234,80.4%,70%,1) 0, transparent 50%),radial-gradient(at 89% 7%, hsla(141,100%,94.9%,1) 0, transparent 50%),radial-gradient(at 5% 6%, hsla(0, 100%, 71%, 1) 0, transparent 50%),radial-gradient(at 17% 42%, hsla(197,100%,88%,1) 0, transparent 50%),radial-gradient(at 27% 81%, hsla(297,73.5%,62.9%,1) 0, transparent 50%);
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.visa-img {
+    width: 80px;
+    margin-left: 26px;
+    margin-top: 30px;
+    float: left;
+}
+
+.cart-number {
+    font-family: Archivo Black;
+    display: block;
+    font-size: 18px;
+    float: left;
+    color: white;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.info-visa {
+    font-family: Archivo Black;
+    float: left;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 28px;
+    color: white;
+
+}
+
+.users {
+    background-color: #2E2E46;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 38px;
+    margin-left: 20px;
+    float: left;
+}
+
+.title-users {
+    float: left;
+    color: #656485;
+    font-size: 16px;
+    margin-left: 18px;
+    margin-top: 25px;
+}
+
+.users-fliter {
+    float: left;
+    color: #656485;
+    margin-top: 20px;
+    margin-left: 65px;
+    border-radius:25px;
+    width: 90px;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 16px;
+    background-color: #393857;
+    cursor: pointer;
+}
+
+.user {
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.user:first-of-type {
+    margin-top: 15px;
+}
+
+.user-img {
+    float: left;
+    width: 24px;
+    float: left;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.user-family {
+    color: #737294;
+    float: left;
+    margin-top: 2px;
+    margin-left: 8px;
+}
+
+.user-price {
+    float: left;
+    color: #75749b;
+    margin-top: 2px;
+    margin-left: 78px;
+}
+
+.column-chart {
+    float: left;
+    background-color: #2E2E46;
+    width: 310px;
+    height: 286px;
+    margin-top: 18px;
+    margin-left: 35px;
+    border-radius: 25px;
+}
+
+.chart-title {
+    color: whitesmoke;
+    font-size: 18px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 23px;
+}
+
+.chart-fliter {
+    float: left;
+    color: #656485;
+    margin-top: 19px;
+    margin-left: 108px;
+    width: 90px;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.months {
+    float: left;
+    font-size: 14px;
+    color: #656485;
+    margin-top: 170px;
+    margin-left: 30px;
+}
+
+.column {
+    float: left;
+    background-color: #363652;
+    height: 130px;
+    width: 6px;
+    margin-left: -15px;
+    margin-top: 29px;
+}
+
+.column::after {
+    float: left;
+    content: '';
+    float: left;
+    background-color: #7B67A8;
+    height: 100px;
+    width: 2px;
+    margin-left: 10px;
+    margin-top: 29px;
+}
+
+.column-2 {
+    float: left;
+    height: 70px;
+    margin-top: 90px;
+}
+
+.column-2::after {
+    float: left;
+    background-color: #BDA0A5;
+    height: 30px;
+    margin-top: 40px;
+}
+
+.column-3 {
+    float: left;
+    height: 40px;
+    margin-top: 120px;
+}
+
+.column-3::after {
+    float: left;
+    background-color: #A86F98;
+    height: 28px;
+    margin-top: 12px;
+}
+
+.column-4 {
+    float: left;
+    height: 100px;
+    margin-top: 60px;
+}
+
+.column-4::after {
+    float: left;
+    background-color: #72B4C9;
+    height: 40px;
+    margin-top: 60px;
+}
+
+.column-5 {
+    float: left;
+    height: 110px;
+    margin-top: 52px;
+}
+
+.column-5::after {
+    float: left;
+    background-color: #DCD8B2;
+    height: 20px;
+    margin-top: 88px;
+}
+
+.column-circle {
+    float: left;
+    background-color: #2E2E46;
+    width: 290px;
+    height: 280px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.chart-circle-fliter {
+    float: left;
+    color: #656485;
+    margin-top: 19px;
+    margin-left: 20px;
+    width: 90px;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.chart-circle {
+    display: block;
+    float: left;
+    width: 110px;
+    margin-left: 85px;
+    margin-top: 5px;
+}
+
+.circle-chart-1 {
+    float: left;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #AD86A3;
+    margin-top: 7px;
+}
+
+.circle-chart-2 {
+    float: left;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #9a8ebb;
+    margin-top: 7px;
+}
+
+.chart-circle-data {
+    float: left;
+    color: #656485;
+    margin-top: 12px;
+    margin-left: 18px;
+}
+
+.chart-1-title {
+    float: left;
+    margin-left: 5px;
+}
+
+.chart-1-int {
+    float: left;
+    margin-left: 130px;
+    color: whitesmoke;
+}
+
+.profile {
+    float: left;
+    margin-top: 30px;
+    width: 210px;
+    height: 100px;
+}
+
+.img-profile {
+    display: block;
+    float: left;
+    width: 40px;
+    border-radius: 10px ;
+    margin-top: 15px;
+    margin-left: 23px;
+}
+
+.username {
+    float: left;
+    color: whitesmoke;
+    margin-top: 18px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.info {    
+    float: left;
+    color: #656485;
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.fa-ellipsis-v {
+    display: block;
+    float: left;
+    color: whitesmoke;
+    margin-top: -11px;
+    margin-left: 24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.hr {
+    border-color: #77769442;
+    display: block;
+    float: left;
+    margin-top: -25px;
+    margin-left: 15px;
+    width: 200px;
+}
+
+.orders {
+    float: left;
+    width: 200px;
+    margin-left: 15px;
+    height: 400px;
+}
+
+.order-title {
+    color: whitesmoke;
+    font-size: 16px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.orders-fliter {
+    float: left;    border-color: #77769442;
+    display: block;
+    float: left;
+    margin-top: -25px;
+    margin-left: 15px;
+    width: 200px;
+    color: #656485;
+    margin-top: -5px;
+    margin-left: 5px;
+    border-radius:25px;
+    width: 90px;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 16px;
+    background-color: #393857;
+    cursor: pointer;
+    Transform : scale(0.8)
+}
+
+.order-img {    
+    display: block;
+    float: left;
+    width: 30px;
+    border-radius: 10px ;
+    margin-top: 20px;
+}
+
+.order-name {
+    float: left;
+    color: whitesmoke;
+    margin-top: 16px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.order-info {
+    float: left;
+    color: #656485;
+    margin-top: 35px;
+    margin-left: -68px;
+    font-size: 12px;
+}
+
+.order-price {
+    float: left;
+    color: whitesmoke;
+    margin-top: 25px;
+    margin-left: 48px;
+}
+
+.order {
+    float: left;
+    margin-top: 0px;
+}
+
+.hr-2 {
+    border-color: #77769442;
+    display: block;
+    float: left;
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 200px;
+}
+
+.footer-title {
+    color: whitesmoke;
+    font-size: 16px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.img-footer {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.active-invert {
+    float: left;
+    position: absolute;
+    width:80px;
+    margin-left: 120px;
+    margin-top: -55px;
+    height: 80px;
+    background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(circle at 0 0, rgba(0,0,0,0) 20px, #393857 21px);
+}
+
+.active-invert2 {
+    float: left;
+    position: absolute;
+    width:80px;
+    margin-left: 120px;
+    margin-top: -19px;
+    height: 80px;
+    background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(circle at 0 100%, rgba(0,0,0,0) 20px, #393857 21px);
+}
