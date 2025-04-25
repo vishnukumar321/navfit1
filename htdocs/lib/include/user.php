@@ -10,7 +10,7 @@ class user{
             $this->conn=database::get_conn();
         }
         $conn=$this->conn;
-        $sql="SELECT * FROM `user` WHERE `username` = '$uname'";
+        $sql="SELECT * FROM `user` WHERE `username` = '$uname' OR `id` = '$uname'";
         $result=$conn->query($sql);
         if($result->num_rows==1){
             $row=$result->fetch_assoc();
@@ -34,6 +34,32 @@ VALUES ('$fname', '$lname', '$uname', '$email', '$phone', '$pass', '$addr1', '$a
         }
         if($conn->query($sql) == true){
             $_SESSION['reff']=$reff;
+            return true;
+        }else{
+            return false;
+        }
+
+
+    }
+    public static function update($fname,$lname,$email,$phone,$addr1,$addr2,$city,$state,$zip,$age,$height,$weight,$gender){
+        $conn=database::get_conn();
+        $id=session::get_value('id');
+        $sql="UPDATE `user` SET
+`first_name` = '$fname',
+`last_name` = '$lname',
+`email` = '$email',
+`phone` = '$phone',
+`address1` = '$addr1',
+`address2` = '$addr2',
+`city` = '$city',
+`state` = '$state',
+`zip` = '$zip',
+`age` = '$age',
+`height` = '$height',
+`weight` = '$weight',
+`gender` = '$gender'
+WHERE `id` = '$id';";
+        if($conn->query($sql) == true){
             return true;
         }else{
             return false;

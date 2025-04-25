@@ -9,7 +9,7 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.122.0">
   <title>Headers · Bootstrap v5.3</title>
-  <script src="assets/js/color-modes.js"></script>
+  <script src="/assets/js/color-modes.js"></script>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
 
@@ -18,8 +18,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="lib/template/css/index.css">
+  <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/lib/template/css/index.css">
   <link rel="stylesheet" href="/lib/template/css/signup.login.css">
   <link rel="stylesheet" href="/lib/template/css/refferal.css">
 
@@ -157,14 +157,12 @@
     </div> -->
     <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
-  <a href="index.php" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+  <a href="/index.php" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
               <h1 style="color: rgb(247, 120, 1);">NavFit</h1>
             </a>    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             
 
-       <?php
-       if(isset($_SESSION["token"])){
-        ?>   <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
         <li>
           <a href="/main.php" class="nav-link text-white mno1">
             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
@@ -256,9 +254,7 @@
     <button class="btn btn-outline-success" type="submit">Search</button>
   </form> -->
 </div>
-</div><?php
-       }
-       ?>  
+</div>  
   </div>
 </nav>
     <!-- </header> -->

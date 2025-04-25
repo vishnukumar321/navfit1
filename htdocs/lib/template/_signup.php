@@ -39,7 +39,7 @@ if(isset($_POST['fname']) and isset($_POST['lname']) and isset($_POST['username'
 }
 if($result){
   if($signup){
-    get_file("success_page");
+    echo '<script>window.location.href="success_page.php";</script>';
   }
 }
 if(!$result OR $error OR $signup){

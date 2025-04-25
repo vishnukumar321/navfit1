@@ -175,7 +175,7 @@ body {
 .users {
     background-color: #2E2E46;
     width: 300px;
-    height: 200px;
+    height: 229px !important;
     border-radius: 20px;
     margin-top: 38px;
     margin-left: 20px;
@@ -359,13 +359,13 @@ body {
 
 .chart-circle-fliter {
     float: left;
-    color: #656485;
+    color: #a7a7a7 !important;
     margin-top: 19px;
     margin-left: 20px;
     width: 90px;
     height: 30px;
-    padding-top: 7px;
-    padding-left: 16px;
+    padding-top: 5px !important;
+    padding-left: 7px !important;
     cursor: pointer;
 }
 
@@ -580,4 +580,7 @@ body {
     background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-image: radial-gradient(circle at 0 100%, rgba(0,0,0,0) 20px, #393857 21px);
+}
+.k{
+    background-color: #363652;
 }

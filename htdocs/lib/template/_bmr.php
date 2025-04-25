@@ -4,6 +4,14 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'>
 
 <?php
+if(isset($_GET['is_pre'])){
+  if(isset($_SESSION['pre_subed'])){
+    echo '<script>window.location.href="diet.php";</script>';
+  }else{
+    ?><script>alert("Please take Premium level subscription...")</script><?php
+    echo '<script>window.location.href="refferal.php";</script>';
+  }
+}
 include_once "lib/load.php";
 if (isset($_POST['height']) and isset($_POST['weight']) and isset($_POST['age']) and isset($_POST['gender'])) {
   $height = $_POST['height'];
@@ -24,7 +32,7 @@ if (isset($_POST['height']) and isset($_POST['weight']) and isset($_POST['age'])
         <h1 class="card-title"><?=$bmr?>&ensp;Calories/day</h1>
         <p class="card-text">Click on the Diet plan below to know more about the calorie related foods.</p>
         <a href="BMR.php" class="card-link" style="font-size: 22px;text-decoration: none;">Clear</a>
-        <a href="#" class="card-link"><button type="button" class="btn btn-danger" style="background-color: rgb(247, 120, 1) !important;border: 1px solid rgb(247, 120, 1);">Diet plan</button>
+        <a href="BMR.php?is_pre=true" class="card-link"><button type="button" class="btn btn-danger" style="background-color: rgb(247, 120, 1) !important;border: 1px solid rgb(247, 120, 1);">Diet plan</button>
         </a>
       </div>
     </div>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/navfit1/htdocs/lib/template/css/bmi.chart.css">
+<link rel="stylesheet" href="/lib/template/css/bmi.chart.css">
 <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Barlow+Condensed&amp;display=swap'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'>
@@ -14,19 +14,26 @@ if(isset($_POST['height']) and isset($_POST['weight']) and isset($_POST['age']) 
     $height=$height*$height;
     $bmi=$weight/$height;
     $color=null;
+    $status=null;
     if($bmi<18.5){
         $color="rgba(3, 75, 230, 0.91)";
+        $status="Under Weight";
     }elseif($bmi>=18.5 and $bmi<=24.9){
         $color="rgb(27, 168, 0)";
+        $status="Normal Weight";
     }elseif($bmi>=25.0 and $bmi<=29.9){
         $color="rgb(255, 243, 0)";
+        $status="Over Weight";
     }elseif($bmi>=30.0 and $bmi<=34.9){
         $color="rgb(255, 93, 18)";
+        $status="Obese";
     }elseif($bmi>=35.0){
         $color="rgb(255, 107, 107)";
+        $status="Extremely Obese";
     }
     $_SESSION['bmi_int_no']=substr($bmi,0,2);
     $_SESSION['bmi_color_no']=$color;
+    $_SESSION['bmi_status_no']=$status;
     $_SESSION['bmi_float_no']=substr($bmi,0,5);
     get_file("graf_bmi");
 }else{

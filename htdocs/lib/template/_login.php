@@ -6,13 +6,22 @@ $error = false;
 if (isset($_POST['name']) and isset($_POST['pass'])) {
   $name = $_POST['name'];
   $pass = $_POST['pass'];
+  if($name==get_conf("admin")){
+    if($pass==get_conf("ad_pass")){
+      echo '<script>window.location.href="admin.php";</script>';
+    }
+  }
   $login = auth::authentication($name,$pass);
   $result = true;
 }
 if ($result) {
   if ($login) {
     // header("Location: index.php");
-    get_file("main");
+    // get_file("main");
+    echo '<script>window.location.href="main.php";</script>';
+    ?>
+    
+    <?php
   } else {
     $error = true;
   }
@@ -66,7 +75,6 @@ if (!$result or $error) {
       </form>
     </center>
   </main>
-
 <?php
 }
 ?>

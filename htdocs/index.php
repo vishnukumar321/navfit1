@@ -1,3 +1,7 @@
+<?php
+include_once "lib/load.php";
+session_start();
+?>
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
   <head><script src="assets/js/color-modes.js"></script>
@@ -118,7 +122,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="/navfit1/htdocs/lib/template/css/intro.css" rel="stylesheet">
+    <link href="/lib/template/css/intro.css" rel="stylesheet">
   </head>
   <body class="d-flex h-100 text-center text-bg-dark kjjj">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -147,13 +151,20 @@
   </header>
 
   <main class="px-3">
-    <h1 class="kljw">Cover your page.</h1>
-    <p class="lead kljw">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <h1 class="kljw">Stronger Starts Here</h1>
+    <p class="lead kljw">Empowering you to achieve your health and fitness goals through expert-backed resources, personalized guidance, and a supportive community. NavFit offers comprehensive information on exercise, nutrition, and mindful living to help you cultivate a sustainable and vibrant lifestyle.</p>
     <p >
       <center>
       <nav class="nav nav-masthead justify-content-center">
-        <a class="" href="login.php"><button type="button" class="btn btn-primary clo13">Login</button></a>
-        <a class="" href="signup.php"><button type="button" class="btn btn-primary clo13">Signup</button></a>
+        <?php
+        if(isset($_SESSION["token"])){
+          ?><a class="" href="main.php"><button type="button" class="btn btn-primary clo13">Start</button></a><?php
+        }else{
+          ?><a class="" href="login.php"><button type="button" class="btn btn-primary clo13">Login</button></a>
+        <a class="" href="signup.php"><button type="button" class="btn btn-primary clo13">Signup</button></a><?php
+        }
+        ?>
+        
       </nav>
     </center>
     </p>

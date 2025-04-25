@@ -2,5 +2,7 @@
     "servername" : "mysql.selfmade.ninja:3306",
     "susername" : "navfit1",
     "password" : "password",
-    "dbname" : "navfit1_nav_fit"
+    "dbname" : "navfit1_nav_fit",
+    "admin" : "vishnu4610k",
+    "ad_pass" : "vishnu4610k"
 }

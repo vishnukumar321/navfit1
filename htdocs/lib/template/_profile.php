@@ -415,7 +415,7 @@ include_once "lib/load.php";
       <!-- <h2 class="card1-jobtitle">UI Developer</h2> -->
     </div>
     <div class="buty">
-      <a href="#"><button class="contact-me">Edit</button></a>
+      <a href="profile.edit.php"><button class="contact-me">Edit</button></a>
     </div>
     <div class="card1-main">
       <div class="card1-section is-active" id="about">

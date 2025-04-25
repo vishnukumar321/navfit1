@@ -47,7 +47,7 @@
       </div>
 
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+        <!-- <p>&copy; 2024 Company, Inc. All rights reserved.</p> -->
         <ul class="list-unstyled d-flex">
           <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
                 <use xlink:href="#twitter" />
@@ -61,7 +61,7 @@
         </ul>
       </div>
     </footer>
-    <script src="assets/dist/js/bootstrap.bundle.min.js">
+    <script src="/assets/dist/js/bootstrap.bundle.min.js">
       const buttons = document.querySelectorAll(".card-buttons button");
 const sections = document.querySelectorAll(".card-section");
 const card = document.querySelector(".card");
@@ -88,3 +88,29 @@ buttons.forEach(btn => {
 </body>
 
 </html>
+<?php
+if(isset($_GET['update'])){
+  ?><script>alert("Updated...")</script><?php
+  echo '<script>window.location.href="/profile.php";</script>';
+}
+if(isset($_GET['no_update'])){
+  ?><script>alert("Sorry you can't update...")</script><?php
+  echo '<script>window.location.href="/profile.php";</script>';
+}
+if(isset($_GET['pro_sub_true'])){
+  ?><script>alert("pro level subscription unlocked...")</script><?php
+  echo '<script>window.location.href="/refferal.php";</script>';
+}
+if(isset($_GET['pro_sub_false'])){
+  ?><script>alert("Insufficient token balance...")</script><?php
+  echo '<script>window.location.href="/refferal.php";</script>';
+}
+if(isset($_GET['pre_sub_true'])){
+  ?><script>alert("Premium level subscription unlocked...")</script><?php
+  echo '<script>window.location.href="/refferal.php";</script>';
+}
+if(isset($_GET['pre_sub_false'])){
+  ?><script>alert("Insufficient token balance...")</script><?php
+  echo '<script>window.location.href="/refferal.php";</script>';
+}
+?>
